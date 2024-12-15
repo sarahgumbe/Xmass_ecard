@@ -1,0 +1,64 @@
+/* Ensure the html and body cover the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background image styling */
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-image: url('https://img.freepik.com/premium-vector/christmas-bells_230977-875.jpg?w=740');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional, keeps the background fixed */
+  height: 100%;
+}
+
+/* Card animation */
+.card {
+  animation: slideIn 1.5s ease-in-out;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border: 2px solid #4dcdff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 20px auto;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card h1 {
+  color: #4de1ff;
+}
+
+.card p {
+  color: #333;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #4df3ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #e63939;
+}
